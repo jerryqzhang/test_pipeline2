@@ -6,9 +6,14 @@ pipeline {
     agent { label "master" }
 
     stages {
-        stage("foo") {
+        stage("test01") {
             steps {
-                sh 'echo "FOO is $FOO"'
+                sh 'echo "01.FOO is ${FOO}"'
+            }
+        }
+        stage("test02") {
+            steps {
+                sh 'echo "02.FOO is ${FOO}"'
             }
         }
     }
