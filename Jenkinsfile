@@ -26,7 +26,7 @@ pipeline {
         }
         stage("test03") {
             when {
-                branch 'master'
+                branch 'master1'
             }
             steps {
                 echo "03.FOO is ${FOO2}"
