@@ -8,12 +8,12 @@ pipeline {
     stages {
         stage("test01") {
             steps {
-                sh 'echo "01.FOO is ${FOO}"'
+                echo "01.FOO is ${FOO}"
             }
         }
         stage("test02") {
             steps {
-                sh 'echo "02.FOO is ${FOO}"'
+                echo "02.FOO is ${FOO}"
             }
         }
     }
