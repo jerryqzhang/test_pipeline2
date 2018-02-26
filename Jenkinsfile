@@ -16,5 +16,10 @@ pipeline {
                 echo "02.FOO is ${FOO}"
             }
         }
+        stage("test03") {
+            steps {
+                echo "02.FOO is ${FOO}"
+            }
+        }
     }
 }
