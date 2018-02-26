@@ -37,5 +37,10 @@ pipeline {
                 echo "06.changed_FOO2 is ${FOO2}"
             }
         }
+        stage("test04") {
+            steps {
+                echo "07.changed_FOO2 is ${FOO2}"
+            }
+        }
     }
 }
