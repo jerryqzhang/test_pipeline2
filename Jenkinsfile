@@ -16,7 +16,7 @@ pipeline {
                 echo "02.FOO is ${FOO2}"
                 echo "02.FOO is ${FOO2}"
                 echo "02.FOO is ${FOO2}"
-                echo "02-1.FOO is ${FOO3}"
+                echo "02-1.FOO is ${FOO2}"
             }
         }
         stage("test03") {
