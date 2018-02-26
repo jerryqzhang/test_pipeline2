@@ -1,5 +1,4 @@
 pipeline {
-    def FOO1 = "BAR1"
     environment {
         FOO2 = "BAR2"
     }
@@ -9,7 +8,7 @@ pipeline {
     stages {
         stage("test01") {
             steps {
-                echo "01.FOO is ${FOO1}"
+                echo "01.FOO is ${FOO2}"
             }
         }
         stage("test02") {
