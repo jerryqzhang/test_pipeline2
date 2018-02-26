@@ -28,6 +28,9 @@ pipeline {
             steps {
                 echo "02.FOO is ${FOO2}"
                 echo "Hello ${params.PERSON}"
+                script {
+                    def browsers = "test_browsers"
+                }
             }
         }
     }
