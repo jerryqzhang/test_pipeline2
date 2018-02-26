@@ -29,9 +29,12 @@ pipeline {
                 echo "03.FOO is ${FOO2}"
                 echo "Hello ${params.PERSON}"
                 script {
+                    FOO2 = "be_changed"
                     def browsers = "test_browsers"
                     echo "04.FOO is ${browsers}"
+                    echo "05.changed_FOO2 is ${FOO2}"
                 }
+                echo "06.changed_FOO2 is ${FOO2}"
             }
         }
     }
