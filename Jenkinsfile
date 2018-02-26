@@ -43,7 +43,6 @@ pipeline {
         }
         stage("test04") {
             parallel{
-                {
                 stage("branch_01"){
                     steps {
                         echo "07.changed_FOO2 is ${FOO2}"
@@ -53,7 +52,6 @@ pipeline {
                     steps {
                         echo "08.changed_FOO2 is ${FOO2}"
                     }
-                }
                 }
                 
             }
