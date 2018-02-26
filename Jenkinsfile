@@ -8,6 +8,8 @@ pipeline {
     stages {
         stage("test01") {
             steps {
+                def FOO1 = "BAR1"
+                echo "00.FOO is ${FOO1}"
                 echo "01.FOO is ${FOO2}"
             }
         }
