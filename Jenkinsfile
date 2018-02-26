@@ -12,11 +12,14 @@ pipeline {
             }
         }
         stage("test02") {
+            environment {
+                FOO3 = "BAR3"
+            }      
             steps {
                 echo "02.FOO is ${FOO2}"
                 echo "02.FOO is ${FOO2}"
                 echo "02.FOO is ${FOO2}"
-                echo "02-1.FOO is ${FOO2}"
+                echo "02-1.FOO is ${FOO3}"
             }
         }
         stage("test03") {
