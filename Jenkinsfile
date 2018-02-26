@@ -13,6 +13,7 @@ pipeline {
         }
         stage("test02") {
             steps {
+                ${FOO2} = "BAR3"
                 echo "02.FOO is ${FOO2}"
             }
         }
