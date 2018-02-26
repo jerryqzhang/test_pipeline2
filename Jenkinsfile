@@ -25,6 +25,9 @@ pipeline {
             }
         }
         stage("test03") {
+            when {
+                branch 'master'
+            }
             steps {
                 echo "03.FOO is ${FOO2}"
                 echo "Hello ${params.PERSON}"
