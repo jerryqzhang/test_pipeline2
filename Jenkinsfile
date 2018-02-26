@@ -26,10 +26,11 @@ pipeline {
         }
         stage("test03") {
             steps {
-                echo "02.FOO is ${FOO2}"
+                echo "03.FOO is ${FOO2}"
                 echo "Hello ${params.PERSON}"
                 script {
                     def browsers = "test_browsers"
+                    echo "03.FOO is ${FOO2}"
                 }
             }
         }
