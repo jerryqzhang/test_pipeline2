@@ -2,7 +2,9 @@ pipeline {
     environment {
         FOO2 = "BAR2"
     }
-
+    parameters {
+        string(name: 'PERSON', defaultValue: 'Mr Jenkins', description: 'Who should I say hello to?')
+    }
     agent { label "master" }
 
     stages {
@@ -25,6 +27,7 @@ pipeline {
         stage("test03") {
             steps {
                 echo "02.FOO is ${FOO2}"
+                echo "Hello ${params.PERSON}"
             }
         }
     }
