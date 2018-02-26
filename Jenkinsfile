@@ -30,7 +30,7 @@ pipeline {
                 echo "Hello ${params.PERSON}"
                 script {
                     def browsers = "test_browsers"
-                    echo "03.FOO is ${FOO2}"
+                    echo "04.FOO is ${browsers}"
                 }
             }
         }
