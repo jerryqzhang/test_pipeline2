@@ -34,6 +34,7 @@ pipeline {
                     echo "04.FOO is ${browsers}"
                     echo "05.changed_FOO2 is ${FOO2}"
                 }
+                input message: 'Finished output after statements? (Click "Proceed" to continue)'
                 echo "06.changed_FOO2 is ${FOO2}"
             }
         }
