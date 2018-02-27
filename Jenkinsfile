@@ -54,11 +54,6 @@ pipeline {
                     }
                 }
             }
-            stage("branch_02"){
-                steps {
-                    echo "08.changed_FOO2 is ${FOO2}"
-                }
-            }
         }
     }
 }
