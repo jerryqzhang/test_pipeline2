@@ -43,9 +43,11 @@ pipeline {
         }
         stage("test04") {
             parallel{
-                stage("branch_01"){
-                    steps {
-                        echo "07.changed_FOO2 is ${FOO2}"
+                stages{
+                    stage("branch_01"){
+                        steps {
+                            echo "07.changed_FOO2 is ${FOO2}"
+                        }
                     }
                 }
                 stage("branch_02"){
