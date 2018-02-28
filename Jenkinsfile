@@ -4,7 +4,7 @@ pipeline {
     }
     parameters {
         string(name: 'PERSON', defaultValue: 'Mr Jenkins', description: 'Who should I say hello to?')
-        choice(name: 'server',choices:'192.168.1.107,9090,*****,*****\n192.168.1.60,9090,*****,*****', description: '测试服务器列表选择(IP,JettyPort,Name,Passwd)')
+        choice(name: 'server',choices:'192.168.1.107,9090,*****,*****\n192.168.1.60,9090,*****,*****', description: 'server choice:(IP,JettyPort,Name,Passwd)')
     }
     agent { label "master" }
 
