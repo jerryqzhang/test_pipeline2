@@ -15,7 +15,11 @@ steps:
 
 - script: |
     echo Hello, world2!
-    echo "this is my $QCI_TASK_ID test for zhiyun bin" > $(Build.ArtifactStagingDirectory)/bin_log.txt
+    echo "this is my $(Build.ArtifactStagingDirectory) test for bin" > $(Build.ArtifactStagingDirectory)/bin_log.txt
+    echo "this is my $(Build.ArtifactStagingDirectory) test for bin" > $(Build.ArtifactStagingDirectory)/bin_log1.txt
+    echo "this is my $(Build.ArtifactStagingDirectory) test for bin" > $(Build.ArtifactStagingDirectory)/bin_log2.txt
+    echo "this is my $(Build.ArtifactStagingDirectory) test for bin" > $(Build.ArtifactStagingDirectory)/bin_log3.txt
+    echo "this is my $(Build.ArtifactStagingDirectory) test for bin" > $(Build.ArtifactStagingDirectory)/bin_log4.txt
   displayName: 'Run a one-line script2'
 
 - task: PublishBuildArtifacts@1
