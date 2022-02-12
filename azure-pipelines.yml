@@ -22,6 +22,9 @@ steps:
     echo "this is my $(Build.ArtifactStagingDirectory) test for bin" > $(Build.ArtifactStagingDirectory)/bin_log4.txt
   displayName: 'Run a one-line script2'
 
+- script: echo Hello, world!
+  displayName: 'Run a one-line script22'
+
 - task: PublishBuildArtifacts@1
   inputs:
     PathtoPublish: '$(Build.ArtifactStagingDirectory)'
